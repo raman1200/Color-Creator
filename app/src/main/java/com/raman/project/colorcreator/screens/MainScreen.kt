@@ -100,6 +100,9 @@ fun ButtonWithTextAndImage() {
                 color = Color.White,
                 fontSize = 20.sp
             )
+            if(unsyncedValue.value == 0){
+                isLoading = false
+            }
 
             if(isLoading && unsyncedValue.value > 0){
                 LottieAnimation(
